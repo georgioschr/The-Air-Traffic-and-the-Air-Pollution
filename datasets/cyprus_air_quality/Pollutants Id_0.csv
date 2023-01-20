@@ -1,0 +1,10 @@
+pollutant_id,pollutant_code,pollutant_name_en,pollutant_name_gr,Unit_of_measurement_en
+1,NO,Nitrogen Oxide,Μονοξείδιο Αζώτου,μg/m³
+2,NO2,Nitrogen Dioxide,Διοξείδιο Αζώτου,μg/m³
+3,NOX,Nitrogen Oxides,Οξείδια του Αζώτου,μg/m³
+4,SO2,Sulfur Dioxide,Διοξείδιο Θείου,μg/m³
+5,O3,Ozone ,Όζον,μg/m³
+6,CO,Carbon Monoxide,Μονοξείδιο 'Ανθρακα,μg/m³
+25,PM10,Particulate Matter 10 μm,Αιωρούμενα Σωματίδια 10 μm,μg/m³
+26,PM2.5,Particulate Matter 2.5 μm ,Αιωρούμενα Σωματίδια 2.5 μm,μg/m³
+45,C6H6,Benzene,Βενζόλιο,μg/m³

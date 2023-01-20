@@ -1,0 +1,10 @@
+station_code,station_name_en,station_name_gr,station_type_en,station_type_gr,latitude,longitude
+1,Nicosia -Traffic Station,Λευκωσία - Κυκλοφοριακός Σταθμός,Traffic,Κυκλοφοριακός,"35°09'07.0""N","33°20'52.0""E"
+2,Nicosia - Residential Station,Λευκωσία - Οικιστικός Σταθμός,Residential,Οικιστικός,"35°07'37.0""N","33°19'54.0""E"
+3,Limassol -Traffic Station,Λεμεσός - Κυκλοφοριακός Σταθμός,Traffic,Κυκλοφοριακός,"34°41'10.0""N","33°02'08.0""E"
+5,Larnaka - Traffic Station,Λάρνακα - Κυκλοφοριακός Σταθμός,Traffic,Κυκλοφοριακός,"34°55'00.0""N","33°37'39.0""E"
+8,Zygi -Industrial Station,Ζύγι - Βιομηχανικός Σταθμός,Industrial,Βιομηχανικός,"34°43'46.0""N","33°20'15.0""E"
+9,EMEP- Ayia Marina Xyliatou -  Background Station,EMEP - Αγία Μαρίνα - Σταθμός Υποβάθρο,Background,Υποβάθρου,"35°02'17.0""N","33°03'28.0""E"
+14,Mari - Industrial Station,Μαρί - Βιομηχανικός Σταθμός,Industrial,Βιομηχανικός,"34°44'21.0""N","33°17'56.0""E"
+15,Pafos - Traffic Station,Πάφος - Κυκλοφοριακός Σταθμός,Traffic,Κυκλοφοριακός,"34°46'20.4""N","32°25'05.1""E"
+16,Paralimni - Traffic Station,Παραλίμνι - Κυκλοφοριακός Σταθμός,Traffic,Κυκλοφοριακός,"35°02'45.0""N","33°58'40.0""E"

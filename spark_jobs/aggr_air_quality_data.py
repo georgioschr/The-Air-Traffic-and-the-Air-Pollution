@@ -4,7 +4,8 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import DoubleType
 
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.master("local[4]").appName("air_quality_pyspark").getOrCreate()
+spark = SparkSession.builder.config('spark.jars', 'gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar').appName("air_quality_pyspark").getOrCreate()
+#spark = SparkSession.builder.master("local[2]").appName("air_quality_pyspark").getOrCreate()
 
 #Pull file from storage
 df = spark.read.option("delimiter", ",").option("header", True).csv("gs://air_quality_cyprus/Data_Hourly_2018.csv")
@@ -35,6 +36,11 @@ df_Pollutants = df_Pollutants.withColumnRenamed('pollutant_id','pollutant_id_pk'
 df_aggr_daily = df_aggr_daily.join(df_stations,df_aggr_daily.station_code == df_stations.station_code_pk, how="inner")
 df_aggr_daily = df_aggr_daily.join(df_Pollutants,df_aggr_daily.pollutant_id == df_Pollutants.pollutant_id_pk, how="inner")
 df_aggr_daily = df_aggr_daily.drop("station_code_pk").drop("pollutant_id_pk")
-                                              
-#Join on aggr data
-df_aggr_daily.write.option("delimiter", ",").option("quote", "\"").option("header", True).mode('overwrite').csv('gs://air_quality_cyprus/Data_Daily_All')
+
+# Saving the data to BigQuery
+temp_bucket = 'staging.comp548dl-big-data.appspot.com'
+table = "comp548dl-big-data.air_quality_cyprus.daily_data"
+df_aggr_daily.write.format("bigquery").mode('overwrite').option("temporaryGcsBucket",temp_bucket).option("table",table).save()
+
+#Store the date
+#df_aggr_daily.write.option("delimiter", ",").option("quote", "\"").option("header", True).option("temporaryGcsBucket","some-bucket").mode('overwrite').csv('gs://air_quality_cyprus/Data_Daily_All')
