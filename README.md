@@ -16,11 +16,11 @@ The below graph from Euro Control data shows the traffic reduction during the se
 
 
 ## Data Sources:
-[Cyprus Air Quality Hourly Historical Data](https://www.data.gov.cy/node/3849?language=en)
-[Cyprus Air Quality Current Data](https://www.data.gov.cy/node/1451?language=en)
-[Cyprus (Larnaca) Air Traffic Daily Historical Data](https://www.data.gov.cy/node/2451?language=en)
-[Cyprus (Pafos) Air Traffic Daily Historical Data](https://www.data.gov.cy/node/2462?language=en)
-[Euro Control](https://www.eurocontrol.int/Economics/2020-DailyTrafficVariation-States.html)
+- [Cyprus Air Quality Hourly Historical Data](https://www.data.gov.cy/node/3849?language=en)
+- [Cyprus Air Quality Current Data](https://www.data.gov.cy/node/1451?language=en)
+- [Cyprus (Larnaca) Air Traffic Daily Historical Data](https://www.data.gov.cy/node/2451?language=en)
+- [Cyprus (Pafos) Air Traffic Daily Historical Data](https://www.data.gov.cy/node/2462?language=en)
+- [Euro Control](https://www.eurocontrol.int/Economics/2020-DailyTrafficVariation-States.html)
 
 ## Results
 ![image](https://user-images.githubusercontent.com/92388643/213828120-02a1eac5-c608-429c-96f6-2a77532f84d3.png)
