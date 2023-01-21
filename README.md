@@ -5,8 +5,8 @@ This project is to investigate how air traffic contributes to the increase the a
 ## Project Objectives:
 Has been stated that the unforeseen outbreak due to COVID-19 in the 21st century, and the forced confinement of millions of inhabitants over the world, mainly during the first part of 2020, has shown a reduction in the temperature in the bigger capitals worldwide.
 
-"Human activity is the cause of the climate problem."
-António Guterres, COP27, Egypt, Nov. 2022
+> _"Human activity is the cause of the climate problem."_
+> António Guterres, COP27, Egypt, Nov. 2022
 
 In this project we to investigating how air traffic contributes to the increase the air pollution and how this may also affect global warming. We will try to utilize open historical data from Cyprus air-quality measures and air traffic for analysis correlation between airline traffic and air pollutants per area and period and identify how the increase in emissions degrades air quality.
 
@@ -23,11 +23,11 @@ The below graph from Euro Control data shows the traffic reduction during the se
 - [Euro Control](https://www.eurocontrol.int/Economics/2020-DailyTrafficVariation-States.html)
 
 ## Data Processing
-[Air_Quality_Data Transformation](/notebook/air_quality_data_csv.ipynb)
-[Air Traffic Data Transformation](/notebook/air_traffic_data_transformation.ipynb)
+- [Air_Quality_Data Transformation](/notebook/air_quality_data_csv.ipynb)
+- [Air Traffic Data Transformation](/notebook/air_traffic_data_transformation.ipynb)
 
 ## Analysis
-[Data Analysis](/notebook/data_analysis.ipynb)
+- [Data Analysis](/notebook/data_analysis.ipynb)
 
 ## Results
 ![image](https://user-images.githubusercontent.com/92388643/213828120-02a1eac5-c608-429c-96f6-2a77532f84d3.png)
