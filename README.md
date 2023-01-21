@@ -24,7 +24,10 @@ The below graph from Euro Control data shows the traffic reduction during the se
 
 ## Results
 ![image](https://user-images.githubusercontent.com/92388643/213828120-02a1eac5-c608-429c-96f6-2a77532f84d3.png)
-Ref: [What is NOx](https://www.noxfondet.no/en/articles/what-is-nox/)
+
+## References: 
+1. [What is NOx](https://www.noxfondet.no/en/articles/what-is-nox/)
+2. [Cyprus Air Quality](https://www.airquality.dli.mlsi.gov.cy/)
 
 ## Data Virtualization
 https://datastudio.google.com/s/rtKC0BK1SYg
