@@ -35,6 +35,20 @@ The process have been
 - [Data Analysis](/notebook/data_analysis.ipynb)
 
 ## Results
+
+In order to quantify the relationship between two traffic and pollutants variables is to use the Pearson correlation coefficient, which measures the linear association between two variables.
+It always takes on a value between -1 and 1 where:
+- -1 indicates a perfectly negative linear correlation
+- 0 indicates no linear correlation
+- 1 indicates a perfectly positive linear correlation
+To determine if a correlation coefficient is statistically significant, we calculate the corresponding t-score and p-value.
+
+![image](https://user-images.githubusercontent.com/92388643/213930826-cdb37a56-b8e1-4840-92ba-49e5f44e6370.png)
+This shows that there is a collaboration between some popular and the air traffic between 0,3 and 0,5, but the p-value is close to 0 which indicates a weak correlation.
+
+#### Correlation matrix
+![image](https://user-images.githubusercontent.com/92388643/213930091-ec89d269-1cbc-4c81-98ad-926aa971d650.png)
+
 ![image](https://user-images.githubusercontent.com/92388643/213828120-02a1eac5-c608-429c-96f6-2a77532f84d3.png)
 
 ## References: 
