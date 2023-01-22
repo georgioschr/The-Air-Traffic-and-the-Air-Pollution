@@ -13,9 +13,7 @@ We have selected to work with Cyprus data, as Cyprus island has high seasonal tr
 <img src="https://user-images.githubusercontent.com/92388643/213927561-34e44929-effa-41ce-aa90-7ee5853e9358.png" alt="alt text" width="700" height="300">
 _Source:_ [ceicdata](https://www.ceicdata.com/en/indicator/cyprus/visitor-arrivals)
 
-Furthermore, the pandemic period COVID-19 was significantly impacted air traffic,  mainly during the second quarter of 2020 due to the hard measures that Cyprus took in order to minimize the spread of the disease. This fro has shown this drop (see the following figure from Euro Control data) and 
-
-The following graph from Euro Control data shows this substantial reduction during the second quarter of 2020. This fluctuation is very useful for our analysis as we expect to see a similar decrease in air pollutants in the areas or cities of Cyprus airports.
+Furthermore, the pandemic period COVID-19 was significantly impacted air traffic,  mainly during the second quarter of 2020 due to the hard measures that Cyprus took in order to minimize the spread of the disease. The following graph from Euro Control page shows this substantial reduction during the second quarter of 2020. This fluctuation is very useful for our analysis as we expect to see a similar decrease in air pollutants close to the Cyprus airports.
 
 ![image](https://user-images.githubusercontent.com/92388643/213935990-d1f58811-f495-4590-92f1-9aa5160b18a9.png)
 _Source:_ [Euro Control](https://www.eurocontrol.int/Economics/2020-DailyTrafficVariation-States.html)
