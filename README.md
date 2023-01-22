@@ -27,7 +27,8 @@ _Source:_ [Euro Control](https://www.eurocontrol.int/Economics/2020-DailyTraffic
 - [Cyprus (Pafos) Air Traffic Daily Historical Data](https://www.data.gov.cy/node/2462?language=en)
 
 ## Data Processing
-The data preprocessing requires to use use a Distributed data system. We have selected to use Hadoop Spark in to process the historical data of Air Quality that we have downloaded for the Cyprus data portal in order to aggregate them at a daily granularity, for easy data manipulation and analysis.
+The data preprocessing requires to use use a Distributed data system. We have selected to use Hadoop Spark and [Google Cloud DataProc](https://cloud.google.com/dataproc/docs/concepts/overview) in to process the historical data of Air Quality that we have downloaded for the Cyprus data portal in order to aggregate them at a daily granularity, for easy data manipulation and analysis.
+- [DataProc Setup and Job Scheduling](/notebook/cloud-dataproc)
 - [Air_Quality_Data Transformation](/notebook/air_quality_data_csv.ipynb)
 
 Air Traffic provided by the Cyprus portal is in a variety of formats, as they use excel and CSV files with different schemas every some years.
