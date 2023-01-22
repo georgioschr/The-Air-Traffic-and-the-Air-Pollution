@@ -6,21 +6,28 @@ Has been stated that the unforeseen outbreak due to COVID-19 in the 21st century
 > António Guterres, COP27, Egypt, Nov. 2022
 
 ## Objectives:
-In this project we to investigating how air traffic contributes to the increase the air pollution and how this may also affect global warming. We will try to utilize open historical data from Cyprus air-quality measures and air traffic for analysis correlation between airline traffic and air pollutants per area and period and identify how the increase in emissions degrades air quality.
+In this project, we investigate how air traffic contributes to the increase in air pollution and how this may also affect global warming. We will try to utilize open historical data from Cyprus air-quality measures and air traffic for analysis and correlation between airline traffic and air pollutants per area and period and identify how the increase in emissions degrades air quality. 
 
-The below graph from Euro Control data shows the traffic reduction during the second quarter of 2020 due to the pandemic measures in Cyprus, the same decrease happened in all international airports during this period. Based on this we expect to see a similar decrease in air pollutants in the areas or cities of these airports.
+We have selected to work with Cyprus data, as Cyprus island has high seasonal traffic of tourists in mainly the summer period and we as assume that this variation will reflect as well in the air quality measurements. The following figure show this seasonal variance.
+![image](https://user-images.githubusercontent.com/92388643/213927561-34e44929-effa-41ce-aa90-7ee5853e9358.png)
+
+_Source:_ [ceicdata](https://www.ceicdata.com/en/indicator/cyprus/visitor-arrivals)
+
+Furthermore, the pandemic period COVID-19 was significantly impacted air traffic,  mainly during the second quarter of 2020 due to the hard measures that Cyprus took in order to minimize the spread of the disease. This fro has shown this drop (see the following figure from Euro Control data) and 
+
+The following graph from Euro Control data shows this substantial reduction during the second quarter of 2020. This fluctuation is very useful for our analysis as we expect to see a similar decrease in air pollutants in the areas or cities of Cyprus airports.
 
 ![image](https://user-images.githubusercontent.com/92388643/213886184-7c684756-522a-48d7-8186-714995bf7b2b.png)
-
+_Source:_ [Euro Control](https://www.eurocontrol.int/Economics/2020-DailyTrafficVariation-States.html)
 
 ## Data Sources:
 - [Cyprus Air Quality Hourly Historical Data](https://www.data.gov.cy/node/3849?language=en)
 - [Cyprus Air Quality Current Data](https://www.data.gov.cy/node/1451?language=en)
 - [Cyprus (Larnaca) Air Traffic Daily Historical Data](https://www.data.gov.cy/node/2451?language=en)
 - [Cyprus (Pafos) Air Traffic Daily Historical Data](https://www.data.gov.cy/node/2462?language=en)
-- [Euro Control](https://www.eurocontrol.int/Economics/2020-DailyTrafficVariation-States.html)
 
 ## Data Processing
+The process have been 
 - [Air_Quality_Data Transformation](/notebook/air_quality_data_csv.ipynb)
 - [Air Traffic Data Transformation](/notebook/air_traffic_data_transformation.ipynb)
 
@@ -35,5 +42,5 @@ The below graph from Euro Control data shows the traffic reduction during the se
 2. [Cyprus Air Quality](https://www.airquality.dli.mlsi.gov.cy/)
 
 ## Data Virtualization
-https://datastudio.google.com/s/rtKC0BK1SYg
+[Dashboard](https://datastudio.google.com/s/rtKC0BK1SYg)
 
