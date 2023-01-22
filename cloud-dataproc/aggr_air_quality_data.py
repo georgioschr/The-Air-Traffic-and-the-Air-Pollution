@@ -3,16 +3,16 @@ import pyspark
 from pyspark.sql.functions import *
 from pyspark.sql.types import DoubleType
 
+# Initialize Spark Session
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.config('spark.jars', 'gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar').appName("air_quality_pyspark").getOrCreate()
-#spark = SparkSession.builder.master("local[2]").appName("air_quality_pyspark").getOrCreate()
+spark = SparkSession \
+  .builder \
+  .master('yarn') \
+  .appName('air_quality_pyspark') \
+  .getOrCreate()
 
-#Pull file from storage
-df = spark.read.option("delimiter", ",").option("header", True).csv("gs://air_quality_cyprus/Data_Hourly_2018.csv")
-df19 = spark.read.option("delimiter", ",").option("header", True).csv("gs://air_quality_cyprus/Data_Hourly_2019.csv")
-df20 = spark.read.option("delimiter", ",").option("header", True).csv("gs://air_quality_cyprus/Data_Hourly_2020.csv")
-df21 = spark.read.option("delimiter", ",").option("header", True).csv("gs://air_quality_cyprus/Data_Hourly_2021.csv")
-df= df.union(df19).union(df20).union(df21)
+#Pull all file from google storage once off and concatenate them
+df = spark.read.option("delimiter", ",").option("header", True).csv("gs://air_quality_cyprus/Data_Hourly_*.csv")
 
 #Add Datetime
 df = df.withColumn("date_time",to_timestamp(df.date_time,'dd/MM/yyyy HH:mm'))
@@ -38,7 +38,7 @@ df_aggr_daily = df_aggr_daily.join(df_Pollutants,df_aggr_daily.pollutant_id == d
 df_aggr_daily = df_aggr_daily.drop("station_code_pk").drop("pollutant_id_pk")
 
 # Saving the data to BigQuery
-temp_bucket = 'staging.comp548dl-big-data.appspot.com'
+temp_bucket = 'staging_for_bigquery'
 table = "comp548dl-big-data.air_quality_cyprus.daily_data"
 df_aggr_daily.write.format("bigquery").mode('overwrite').option("temporaryGcsBucket",temp_bucket).option("table",table).save()
 
