@@ -6,7 +6,7 @@ Has been stated that the unforeseen outbreak due to COVID-19 in the 21st century
 > António Guterres, COP27, Egypt, Nov. 2022
 
 ## Objectives:
-In this project, we investigate how air traffic contributes to the increase in air pollution and how this may also affect global warming. We will try to utilize open historical data from Cyprus air-quality measures and air traffic for analysis and correlation between airline traffic and air pollutants per area and period and identify how the increase in emissions degrades air quality. 
+In this project, we investigate how air traffic contributes to the increase in air pollution and how this may also affect global warming. We utilize open historical data from Cyprus air-quality measures and air traffic for analysis and correlation between airline traffic and air pollutants per area and period and identify how the increase in emissions degrades air quality. 
 
 We have selected to work with Cyprus data, as Cyprus island has high seasonal traffic of tourists in mainly the summer period and we as assume that this variation will reflect as well in the air quality measurements. The following figure show this seasonal variance.
 
