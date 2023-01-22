@@ -27,11 +27,14 @@ _Source:_ [Euro Control](https://www.eurocontrol.int/Economics/2020-DailyTraffic
 - [Cyprus (Pafos) Air Traffic Daily Historical Data](https://www.data.gov.cy/node/2462?language=en)
 
 ## Data Processing
-The process have been 
+The data preprocessing requires to use use a Distributed data system. We have selected to use Hadoop Spark in to process the historical data of Air Quality that we have downloaded for the Cyprus data portal in order to aggregate them at a daily granularity, for easy data manipulation and analysis.
 - [Air_Quality_Data Transformation](/notebook/air_quality_data_csv.ipynb)
+
+Air Traffic provided by the Cyprus portal is in a variety of formats, as they use excel and CSV files with different schemas every some years.
 - [Air Traffic Data Transformation](/notebook/air_traffic_data_transformation.ipynb)
 
 ## Analysis
+This notebook shows step by step the analysis that we have performed
 - [Data Analysis](/notebook/data_analysis.ipynb)
 
 ## Results
@@ -51,7 +54,11 @@ This shows that there is a correlation between some pollutants and air traffic w
 #### Correlation matrix
 ![image](https://user-images.githubusercontent.com/92388643/213930091-ec89d269-1cbc-4c81-98ad-926aa971d650.png)
 
-![image](https://user-images.githubusercontent.com/92388643/213828120-02a1eac5-c608-429c-96f6-2a77532f84d3.png)
+However, as we deal with time series data, we need to investigate also for the seasonality effect in all variables not only in air traffic, and check whether is possible to their relation/correlation by removing the possible seasonality.
+
+From the following graphs, we can easily view the relationship and how the pollutant of NO and NOx values are drops parallel with air traffic during the 1st and 2nd quarter of 2020
+![image](https://user-images.githubusercontent.com/92388643/213934403-06c0a4eb-7306-4c72-aef8-19fe542b3e2f.png)
+![image](https://user-images.githubusercontent.com/92388643/213934383-73f4d597-dab0-417f-bc03-4a15a18de9bb.png)
 
 ## References: 
 1. [What is NOx](https://www.noxfondet.no/en/articles/what-is-nox/)
