@@ -11,6 +11,7 @@ In this project, we investigate how air traffic contributes to the increase in a
 We have selected to work with Cyprus data, as Cyprus island has high seasonal traffic of tourists in mainly the summer period and we as assume that this variation will reflect as well in the air quality measurements. The following figure show this seasonal variance.
 
 <img src="https://user-images.githubusercontent.com/92388643/213927561-34e44929-effa-41ce-aa90-7ee5853e9358.png" alt="alt text" width="700" height="300">
+
 _Source:_ [ceicdata](https://www.ceicdata.com/en/indicator/cyprus/visitor-arrivals)
 
 Furthermore, the pandemic period COVID-19 was significantly impacted air traffic,  mainly during the second quarter of 2020 due to the hard measures that Cyprus took in order to minimize the spread of the disease. The following graph from Euro Control page shows this substantial reduction during the second quarter of 2020. This fluctuation is very useful for our analysis as we expect to see a similar decrease in air pollutants close to the Cyprus airports.
